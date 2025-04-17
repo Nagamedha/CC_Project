@@ -1,0 +1,44 @@
+project_name: om-insights
+default_environment: dev
+
+
+lambda_functions:
+  sales:
+    function_name_suffix: worker-processing
+    env_vars:
+      PROCESS_TYPE: SALES
+      LOG_LEVEL: DEBUG
+    memory: 3000
+    ephemeral_storage: 4096
+    timeout: 280
+    sqs_queue_name: worker  # ✅ matches key exactly
+    handler: "file_processor.src.worker_lambdas.worker.sales_lambda.lambda_handler"
+    provisioned_concurrency: 0
+  inventory:
+    function_name_suffix: inventory-processing
+    env_vars:
+      PROCESS_TYPE: INVENTORY
+      LOG_LEVEL: DEBUG
+    memory: 3000
+    ephemeral_storage: 4096
+    timeout: 290
+    sqs_queue_name: inventory  # ✅ match exactly
+    handler: "file_processor.src.worker_lambdas.inventory.inventory_lambda.lambda_handler"
+    provisioned_concurrency: 0
+  marketing:  # ✅ Changed from 'general' to 'marketing' to match queue
+    function_name_suffix: marketing-processing
+    env_vars:
+      PROCESS_TYPE: MARKETING
+      LOG_LEVEL: DEBUG
+    memory: 3000
+    ephemeral_storage: 4096
+    timeout: 290
+    sqs_queue_name: marketing  # ✅ exactly matches routing_config.yaml keys
+    handler: "file_processor.src.worker_lambdas.marketing.marketing_lambda.lambda_handler"
+    provisioned_concurrency: 0
+
+dynamodb:
+  routing_metadata:
+    table_name: routing-metadata
+  processing_results:
+    table_name: processing-results

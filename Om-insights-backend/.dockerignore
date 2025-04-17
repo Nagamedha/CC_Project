@@ -1,0 +1,47 @@
+# Ignore Python cache and bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.whl
+
+# Ignore virtual environments and package directories
+.venv/
+env/
+venv/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# Ignore test directories and files
+file_processor/tests/
+fastApi/tests/
+
+# Ignore local environment and configuration files
+.env
+*.env
+secrets.json
+config.json
+
+# Ignore version control directories
+.git/
+.gitignore
+
+# Ignore any temporary, cache, or log files
+*.log
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+
+# Ignore editor/IDE-specific files
+.vscode/
+.idea/
+
+# Ignore Docker-related files (optional, but useful if not needed in the container)
+Dockerfile
+docker-compose.yml
+
+# Ignore AWS credentials if using any
+.aws/

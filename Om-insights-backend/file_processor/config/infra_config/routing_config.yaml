@@ -1,0 +1,31 @@
+project_name: om-insights
+environment: dev
+ecr_repo:
+  name: om-insights-backend
+  image_tag: latest
+queues:
+  sales:
+    name: om-insights-worker-queue-dev
+    url: https://sqs.us-east-1.amazonaws.com/476114134948/om-insights-sales-queue-dev
+
+  inventory:
+    name: om-insights-inventory-queue-dev
+    url: https://sqs.us-east-1.amazonaws.com/476114134948/om-insights-inventory-queue-dev
+
+  marketing:
+    name: om-insights-marketing-queue-dev
+    url: https://sqs.us-east-1.amazonaws.com/476114134948/om-insights-marketing-queue-dev
+
+dynamodb:
+  routing_metadata:
+    table_name: routing-metadata
+  processing_results:
+    table_name: processing-results
+
+
+lambda:
+  memory_size: 512
+  timeout_seconds: 30
+  log_retention_days: 7
+file_processing:
+  size_threshold_param: "/Om-insights/file-processing/size-threshold"

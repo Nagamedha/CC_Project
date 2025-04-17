@@ -1,0 +1,7 @@
+# These owners will be the default owners for everything in the repo
+*       @project-lead
+
+# Owners of specific parts of the codebase
+/services/ @service-team-lead
+/repositories/ @data-team-lead
+/api/ @api-team-lead

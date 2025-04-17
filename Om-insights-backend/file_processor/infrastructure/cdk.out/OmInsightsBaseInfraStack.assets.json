@@ -1,0 +1,20 @@
+{
+  "version": "32.0.0",
+  "files": {
+    "c04d2e26d89249d07b403bb8db1c44ff7b6eab5e86934308c28c1089fc65bca9": {
+      "source": {
+        "path": "OmInsightsBaseInfraStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "476114134948-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-476114134948-us-east-1",
+          "objectKey": "c04d2e26d89249d07b403bb8db1c44ff7b6eab5e86934308c28c1089fc65bca9.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-file-publishing-role-476114134948-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

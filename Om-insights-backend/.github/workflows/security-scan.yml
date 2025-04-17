@@ -1,0 +1,20 @@
+name: Security Scan
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Run every Sunday at midnight
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Bandit
+      run: |
+        pip install bandit
+        bandit -r . -f custom -o security-report.txt
+    - name: Upload Security Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: security-report
+        path: security-report.txt

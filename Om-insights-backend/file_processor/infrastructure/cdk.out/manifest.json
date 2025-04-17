@@ -1,0 +1,1001 @@
+{
+  "version": "32.0.0",
+  "artifacts": {
+    "OmInsightsBaseInfraStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "OmInsightsBaseInfraStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "OmInsightsBaseInfraStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://476114134948/us-east-1",
+      "properties": {
+        "templateFile": "OmInsightsBaseInfraStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-deploy-role-476114134948-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-cfn-exec-role-476114134948-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-476114134948-us-east-1/c04d2e26d89249d07b403bb8db1c44ff7b6eab5e86934308c28c1089fc65bca9.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "OmInsightsBaseInfraStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-lookup-role-476114134948-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "OmInsightsBaseInfraStack.assets"
+      ],
+      "metadata": {
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcF073D621"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PublicSubnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPublicSubnetSubnet1SubnetEB2D00D2"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PublicSubnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPublicSubnetSubnet1RouteTable09D67E18"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PublicSubnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPublicSubnetSubnet1RouteTableAssociationE0B5B38F"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PublicSubnetSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPublicSubnetSubnet1DefaultRoute17854935"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PublicSubnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPublicSubnetSubnet2SubnetEDCC2A4D"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PublicSubnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPublicSubnetSubnet2RouteTable3E6F9927"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PublicSubnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPublicSubnetSubnet2RouteTableAssociation9260BB5D"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PublicSubnetSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPublicSubnetSubnet2DefaultRoute9074EF20"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PrivateSubnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPrivateSubnetSubnet1Subnet317F70B8"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PrivateSubnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPrivateSubnetSubnet1RouteTableE1962851"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PrivateSubnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPrivateSubnetSubnet1RouteTableAssociationA4CC8246"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PrivateSubnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPrivateSubnetSubnet2Subnet1A061DE5"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PrivateSubnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPrivateSubnetSubnet2RouteTable646B712E"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/PrivateSubnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcPrivateSubnetSubnet2RouteTableAssociationB49D3871"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcIGW6A541554"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcVPCGW0181D1E0"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/S3Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcS3Endpoint772C9A15"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsVpc/DynamoDBEndpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsVpcDynamoDBEndpoint74C61F3C"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsEFS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsEFSE34F1AD5"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsEFS/EfsSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsEFSEfsSecurityGroup524D8AB8"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsEFS/EfsSecurityGroup/from OmInsightsBaseInfraStackLambdaEfsSecurityGroupBF02D9C1:2049": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsEFSEfsSecurityGroupfromOmInsightsBaseInfraStackLambdaEfsSecurityGroupBF02D9C12049E53C925F"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsEFS/EfsMountTarget1": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsEFSEfsMountTarget16F8F9F3D"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsEFS/EfsMountTarget2": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsEFSEfsMountTarget2651F0DD0"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/OmInsightsEFS/OmInsightsEFSAccessPoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OmInsightsEFSOmInsightsEFSAccessPointDB985D49"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/LambdaEfsSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEfsSecurityGroup587B1078"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/LambdaEfsSecurityGroup/from OmInsightsBaseInfraStackLambdaEfsSecurityGroupBF02D9C1:443": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaEfsSecurityGroupfromOmInsightsBaseInfraStackLambdaEfsSecurityGroupBF02D9C144388E40DCF"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/EFSFileSystemId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EFSFileSystemId"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/EFSAccessPointId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EFSAccessPointId"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/LambdaSecurityGroupId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaSecurityGroupId"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/ExistingFileBucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExistingFileBucketNotifications439E3C6D"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-free-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturfreefileprocessingqueueDLQ50A053F6"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-free-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturfreefileprocessingqueue013B758A"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-free-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturfreefileprocessingqueuePolicyCFBF06A8"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-basic-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturbasicfileprocessingqueueDLQDBF91424"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-basic-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturbasicfileprocessingqueueDD925984"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-basic-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturbasicfileprocessingqueuePolicy1FF685A7"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-pro-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturprofileprocessingqueueDLQ338ED69A"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-pro-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturprofileprocessingqueueD00D3A7B"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/guntur-pro-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturprofileprocessingqueuePolicyF20C9A79"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-free-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadfreefileprocessingqueueDLQ09F29113"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-free-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadfreefileprocessingqueue3A00BCF4"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-free-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadfreefileprocessingqueuePolicy9CEBED07"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-basic-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadbasicfileprocessingqueueDLQD9D44F58"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-basic-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadbasicfileprocessingqueue9875EC22"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-basic-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadbasicfileprocessingqueuePolicy216DEE28"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-pro-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadprofileprocessingqueueDLQ6773B660"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-pro-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadprofileprocessingqueue7D5667DB"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/hyderabad-pro-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadprofileprocessingqueuePolicy2459606B"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-free-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagfreefileprocessingqueueDLQA996FCE9"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-free-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagfreefileprocessingqueueD0210276"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-free-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagfreefileprocessingqueuePolicy05524A29"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-basic-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagbasicfileprocessingqueueDLQ356752EA"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-basic-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagbasicfileprocessingqueue4C9E4F98"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-basic-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagbasicfileprocessingqueuePolicy59DDB0F6"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-pro-file-processing-queue-DLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagprofileprocessingqueueDLQCA35A9D4"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-pro-file-processing-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagprofileprocessingqueue5554C3DF"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/vizag-pro-file-processing-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagprofileprocessingqueuePolicy792DD94D"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/worker-queueDLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "workerqueueDLQF572415E"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/worker-queueQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "workerqueueQueueAD4DD13C"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/worker-queueQueueName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "workerqueueQueueName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/worker-queueDLQName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "workerqueueDLQName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/inventory-queueDLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "inventoryqueueDLQ95BC56F8"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/inventory-queueQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "inventoryqueueQueue8D928AA8"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/inventory-queueQueueName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "inventoryqueueQueueName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/inventory-queueDLQName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "inventoryqueueDLQName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/marketing-queueDLQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "marketingqueueDLQDAE6232A"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/marketing-queueQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "marketingqueueQueueA6E57B23"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/marketing-queueQueueName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "marketingqueueQueueName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/marketing-queueDLQName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "marketingqueueDLQName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/LambdaExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaExecutionRoleD5C26073"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/LambdaExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaExecutionRoleDefaultPolicy6D69732F"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/DynamoDBTableStatus": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBTableStatus"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/WorkerTableStatus": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerTableStatus"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/WorkerTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WorkerTableName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/InventoryTableStatus": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InventoryTableStatus"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/InventoryTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InventoryTableName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/MarketingTableStatus": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MarketingTableStatus"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/MarketingTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MarketingTableName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/CustomerTableStatus": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomerTableStatus"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/CustomerTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomerTableName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/BucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/LambdaRoleArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaRoleArn"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/FileMetadataTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FileMetadataTableName"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"LambdaExecutionRoleD5C26073\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttLambdaExecutionRoleD5C26073ArnADAF6607"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Ref\":\"workerqueueQueueAD4DD13C\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefworkerqueueQueueAD4DD13CB063E749"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Ref\":\"inventoryqueueQueue8D928AA8\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefinventoryqueueQueue8D928AA894D4F742"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Ref\":\"marketingqueueQueueA6E57B23\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefmarketingqueueQueueA6E57B2347804BBC"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Ref\":\"OmInsightsEFSOmInsightsEFSAccessPointDB985D49\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefOmInsightsEFSOmInsightsEFSAccessPointDB985D49ED8F8D91"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Ref\":\"OmInsightsVpcPrivateSubnetSubnet1Subnet317F70B8\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefOmInsightsVpcPrivateSubnetSubnet1Subnet317F70B858AB199A"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Ref\":\"OmInsightsVpcPrivateSubnetSubnet2Subnet1A061DE5\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefOmInsightsVpcPrivateSubnetSubnet2Subnet1A061DE56D1A3040"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"LambdaEfsSecurityGroup587B1078\",\"GroupId\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttLambdaEfsSecurityGroup587B1078GroupId4385B065"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"gunturfreefileprocessingqueue013B758A\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttgunturfreefileprocessingqueue013B758AArn7DABB771"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"gunturbasicfileprocessingqueueDD925984\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttgunturbasicfileprocessingqueueDD925984Arn768269D3"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"gunturprofileprocessingqueueD00D3A7B\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttgunturprofileprocessingqueueD00D3A7BArn3985E2BC"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"hyderabadfreefileprocessingqueue3A00BCF4\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAtthyderabadfreefileprocessingqueue3A00BCF4Arn77035C74"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"hyderabadbasicfileprocessingqueue9875EC22\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAtthyderabadbasicfileprocessingqueue9875EC22Arn86A49502"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"hyderabadprofileprocessingqueue7D5667DB\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAtthyderabadprofileprocessingqueue7D5667DBArn601101D2"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"vizagfreefileprocessingqueueD0210276\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttvizagfreefileprocessingqueueD0210276ArnC2FCF51F"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"vizagbasicfileprocessingqueue4C9E4F98\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttvizagbasicfileprocessingqueue4C9E4F98ArnCE45E46A"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"vizagprofileprocessingqueue5554C3DF\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttvizagprofileprocessingqueue5554C3DFArn6AA67563"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"workerqueueQueueAD4DD13C\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttworkerqueueQueueAD4DD13CArn3D54921B"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"inventoryqueueQueue8D928AA8\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttinventoryqueueQueue8D928AA8ArnB1F9A74C"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/Exports/Output{\"Fn::GetAtt\":[\"marketingqueueQueueA6E57B23\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttmarketingqueueQueueA6E57B23ArnF406DDCB"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/OmInsightsBaseInfraStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "OmInsightsBaseInfraStack"
+    },
+    "OmInsightsFileProcessingStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "OmInsightsFileProcessingStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "OmInsightsFileProcessingStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://476114134948/us-east-1",
+      "properties": {
+        "templateFile": "OmInsightsFileProcessingStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-deploy-role-476114134948-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-cfn-exec-role-476114134948-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-476114134948-us-east-1/08c3dcc2bfb5af93faf4a3b9cf95dccc99a544a3ffcff6772ccf5b1e89095215.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "OmInsightsFileProcessingStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-lookup-role-476114134948-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "OmInsightsBaseInfraStack",
+        "OmInsightsFileProcessingStack.assets"
+      ],
+      "metadata": {
+        "/OmInsightsFileProcessingStack/RoutingLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RoutingLambdaF7AD8A1A"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/RoutingLambda/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RoutingLambdaLogRetention589DAA8A"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/guntur-free-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturfreefileprocessingqueueEventSource08C304BB"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/guntur-basic-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturbasicfileprocessingqueueEventSource3869C06E"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/guntur-pro-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "gunturprofileprocessingqueueEventSourceA0F1EEE4"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/hyderabad-free-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadfreefileprocessingqueueEventSourceED953BE8"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/hyderabad-basic-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadbasicfileprocessingqueueEventSource3D782B59"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/hyderabad-pro-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hyderabadprofileprocessingqueueEventSource8F877AD9"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/vizag-free-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagfreefileprocessingqueueEventSource66213DFF"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/vizag-basic-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagbasicfileprocessingqueueEventSource01DCB148"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/vizag-pro-file-processing-queue-EventSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vizagprofileprocessingqueueEventSource5C41440E"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/SalesQueueUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SalesQueueUrl"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/InventoryQueueUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InventoryQueueUrl"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/MarketingQueueUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MarketingQueueUrl"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/LambdaFunctionName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaFunctionName"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/FileUploadBucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FileUploadBucketName"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/OmInsightsFileProcessingStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "OmInsightsFileProcessingStack"
+    },
+    "OmInsightsProcessingLambdasStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "OmInsightsProcessingLambdasStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "OmInsightsProcessingLambdasStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://476114134948/us-east-1",
+      "properties": {
+        "templateFile": "OmInsightsProcessingLambdasStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-deploy-role-476114134948-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-cfn-exec-role-476114134948-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-476114134948-us-east-1/44029a499599308b3b12733e5d7dfe24fac0562fa4620dbbbd726b7463d96611.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "OmInsightsProcessingLambdasStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::476114134948:role/cdk-hnb659fds-lookup-role-476114134948-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "OmInsightsBaseInfraStack",
+        "OmInsightsFileProcessingStack",
+        "OmInsightsProcessingLambdasStack.assets"
+      ],
+      "metadata": {
+        "/OmInsightsProcessingLambdasStack/SalesProcessingLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SalesProcessingLambda48ED94DB"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/SalesProcessingLambda/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SalesProcessingLambdaLogRetention1AC28710"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/SalesProcessingLambda/SqsEventSource:OmInsightsBaseInfraStackworkerqueueQueue29F91354/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SalesProcessingLambdaSqsEventSourceOmInsightsBaseInfraStackworkerqueueQueue29F91354E415079E"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/InventoryProcessingLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InventoryProcessingLambdaBEA5E421"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/InventoryProcessingLambda/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InventoryProcessingLambdaLogRetention5C3DB50F"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/InventoryProcessingLambda/SqsEventSource:OmInsightsBaseInfraStackinventoryqueueQueue571621F2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InventoryProcessingLambdaSqsEventSourceOmInsightsBaseInfraStackinventoryqueueQueue571621F2A94654D4"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/MarketingProcessingLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MarketingProcessingLambda6E2BCF69"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/MarketingProcessingLambda/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MarketingProcessingLambdaLogRetentionA1E3415C"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/MarketingProcessingLambda/SqsEventSource:OmInsightsBaseInfraStackmarketingqueueQueue9B9CB9B8/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MarketingProcessingLambdaSqsEventSourceOmInsightsBaseInfraStackmarketingqueueQueue9B9CB9B843CB2F97"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/OmInsightsProcessingLambdasStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "OmInsightsProcessingLambdasStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

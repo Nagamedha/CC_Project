@@ -1,0 +1,53 @@
+# ---------------------------
+# AWS & Infrastructure (Essential for AWS Lambda)
+# ---------------------------
+aws-cdk-lib==2.87.0
+constructs>=10.0.0,<11.0.0
+boto3>=1.24.0
+aws-lambda-powertools~=3.7.0
+requests-aws4auth==1.1.1
+
+# ---------------------------
+# Core Utilities
+# ---------------------------
+requests==2.32.0
+pydantic~=1.10.21
+pytest~=8.3.4
+PyYAML~=6.0.2
+dependency-injector~=4.46.0
+
+
+# ---------------------------
+# Data Processing & Fuzzy Matching
+# ---------------------------
+#numpy>=1.23.2,<1.27
+#pandas~=2.2.3
+#scikit-learn~=1.6.1  # Required for custom ML models
+#sentence-transformers~=3.4.1  # For embedding-based search (if needed)
+#fuzzywuzzy~=0.18.0  # For fuzzy text matching
+#python-Levenshtein~=0.25.1  # Required for fuzzy matching
+
+# ---------------------------
+# NLP and Text Preprocessing (For Spacy & Sentiment Analysis)
+# ---------------------------
+#beautifulsoup4~=4.12.3  # HTML tag removal
+#lxml~=4.9.3  # Required parser for BeautifulSoup
+#html5lib~=1.1  # Alternative parser for BeautifulSoup
+#langdetect~=1.0.9  # Detect language before processing
+#textblob~=0.17.1  # For spell checking & sentiment analysis (baseline)
+#symspellpy~=6.7.7  # More advanced spell correction (optional)
+#inflect~=6.0.2  # Convert numbers to words
+#regex~=2024.4.28  # Use the latest available version
+#chardet==4.0.0
+#word2number==1.1
+# ---------------------------
+# Spacy for Named Entity Recognition (NER)
+# ---------------------------
+# spacy~=3.7.2  # Core NLP library for NER
+# spacy-lookups-data~=1.0. # Extra linguistic data for better performance
+# NOTE: The Spacy model (`en_core_web_sm`) should be pre-downloaded & stored in EFS.
+
+# ---------------------------
+#  NO Heavy AI Dependencies REMOVED for AWS Lambda
+#  NO Torch, NO Transformers, NO HuggingFace Datasets (Only needed for model training)
+# ---------------------------

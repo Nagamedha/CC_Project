@@ -1,0 +1,15 @@
+INVENTORY_SCHEMA = {
+    "product_id": ["sku", "product id", "stock item"],
+    "stock_level": ["stock", "quantity", "available stock"],
+    "reorder_threshold": ["minimum stock", "restock level"],
+    "last_updated": ["date updated", "last modified"],
+    "supplier": ["supplier name", "vendor"]
+}
+
+RULE_BASED_MAPPINGS = {
+    "stock": "stock_level",
+    "qty": "stock_level",
+    "vendor": "supplier",
+    "restock level": "reorder_threshold",
+    "date updated": "last_updated"
+}

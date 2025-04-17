@@ -1,0 +1,410 @@
+{
+ "Resources": {
+  "RoutingLambdaF7AD8A1A": {
+   "Type": "AWS::Lambda::Function",
+   "Properties": {
+    "Code": {
+     "ImageUri": {
+      "Fn::Join": [
+       "",
+       [
+        "476114134948.dkr.ecr.us-east-1.",
+        {
+         "Ref": "AWS::URLSuffix"
+        },
+        "/om-insights-om-insights-backend:dev-latest-f0b7a1f0-c67b6f58"
+       ]
+      ]
+     }
+    },
+    "Role": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAttLambdaExecutionRoleD5C26073ArnADAF6607"
+    },
+    "Environment": {
+     "Variables": {
+      "DYNAMODB_TABLE": "om-insights-file-metadata",
+      "S3_BUCKET_NAME": "om-insights-file-uploads-dev",
+      "SALES_QUEUE_URL": {
+       "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefworkerqueueQueueAD4DD13CB063E749"
+      },
+      "INVENTORY_QUEUE_URL": {
+       "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefinventoryqueueQueue8D928AA894D4F742"
+      },
+      "MARKETING_QUEUE_URL": {
+       "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefmarketingqueueQueueA6E57B2347804BBC"
+      },
+      "LOG_LEVEL": "DEBUG"
+     }
+    },
+    "FileSystemConfigs": [
+     {
+      "Arn": {
+       "Fn::Join": [
+        "",
+        [
+         "arn:",
+         {
+          "Ref": "AWS::Partition"
+         },
+         ":elasticfilesystem:us-east-1:476114134948:access-point/",
+         {
+          "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefOmInsightsEFSOmInsightsEFSAccessPointDB985D49ED8F8D91"
+         }
+        ]
+       ]
+      },
+      "LocalMountPath": "/mnt/efs"
+     }
+    ],
+    "FunctionName": "om-insights-routing-dev",
+    "MemorySize": 512,
+    "PackageType": "Image",
+    "Timeout": 30,
+    "VpcConfig": {
+     "SecurityGroupIds": [
+      {
+       "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAttLambdaEfsSecurityGroup587B1078GroupId4385B065"
+      }
+     ],
+     "SubnetIds": [
+      {
+       "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefOmInsightsVpcPrivateSubnetSubnet1Subnet317F70B858AB199A"
+      },
+      {
+       "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefOmInsightsVpcPrivateSubnetSubnet2Subnet1A061DE56D1A3040"
+      }
+     ]
+    }
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/RoutingLambda/Resource"
+   }
+  },
+  "RoutingLambdaLogRetention589DAA8A": {
+   "Type": "Custom::LogRetention",
+   "Properties": {
+    "ServiceToken": {
+     "Fn::GetAtt": [
+      "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+      "Arn"
+     ]
+    },
+    "LogGroupName": {
+     "Fn::Join": [
+      "",
+      [
+       "/aws/lambda/",
+       {
+        "Ref": "RoutingLambdaF7AD8A1A"
+       }
+      ]
+     ]
+    },
+    "RetentionInDays": 7
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/RoutingLambda/LogRetention/Resource"
+   }
+  },
+  "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "lambda.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "ManagedPolicyArns": [
+     {
+      "Fn::Join": [
+       "",
+       [
+        "arn:",
+        {
+         "Ref": "AWS::Partition"
+        },
+        ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+       ]
+      ]
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource"
+   }
+  },
+  "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": [
+        "logs:PutRetentionPolicy",
+        "logs:DeleteRetentionPolicy"
+       ],
+       "Effect": "Allow",
+       "Resource": "*"
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+    "Roles": [
+     {
+      "Ref": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A": {
+   "Type": "AWS::Lambda::Function",
+   "Properties": {
+    "Handler": "index.handler",
+    "Runtime": "nodejs16.x",
+    "Code": {
+     "S3Bucket": "cdk-hnb659fds-assets-476114134948-us-east-1",
+     "S3Key": "5fa1330271b8967d9254ba2d4a07144f8acefe8b77e6d6bba38261373a50d5f8.zip"
+    },
+    "Role": {
+     "Fn::GetAtt": [
+      "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+      "Arn"
+     ]
+    }
+   },
+   "DependsOn": [
+    "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+    "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource",
+    "aws:asset:path": "asset.5fa1330271b8967d9254ba2d4a07144f8acefe8b77e6d6bba38261373a50d5f8",
+    "aws:asset:is-bundled": false,
+    "aws:asset:property": "Code"
+   }
+  },
+  "gunturfreefileprocessingqueueEventSource08C304BB": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAttgunturfreefileprocessingqueue013B758AArn7DABB771"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/guntur-free-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "gunturbasicfileprocessingqueueEventSource3869C06E": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAttgunturbasicfileprocessingqueueDD925984Arn768269D3"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/guntur-basic-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "gunturprofileprocessingqueueEventSourceA0F1EEE4": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAttgunturprofileprocessingqueueD00D3A7BArn3985E2BC"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/guntur-pro-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "hyderabadfreefileprocessingqueueEventSourceED953BE8": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAtthyderabadfreefileprocessingqueue3A00BCF4Arn77035C74"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/hyderabad-free-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "hyderabadbasicfileprocessingqueueEventSource3D782B59": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAtthyderabadbasicfileprocessingqueue9875EC22Arn86A49502"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/hyderabad-basic-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "hyderabadprofileprocessingqueueEventSource8F877AD9": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAtthyderabadprofileprocessingqueue7D5667DBArn601101D2"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/hyderabad-pro-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "vizagfreefileprocessingqueueEventSource66213DFF": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAttvizagfreefileprocessingqueueD0210276ArnC2FCF51F"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/vizag-free-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "vizagbasicfileprocessingqueueEventSource01DCB148": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAttvizagbasicfileprocessingqueue4C9E4F98ArnCE45E46A"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/vizag-basic-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "vizagprofileprocessingqueueEventSource5C41440E": {
+   "Type": "AWS::Lambda::EventSourceMapping",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "RoutingLambdaF7AD8A1A"
+    },
+    "BatchSize": 5,
+    "EventSourceArn": {
+     "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputFnGetAttvizagprofileprocessingqueue5554C3DFArn6AA67563"
+    },
+    "MaximumBatchingWindowInSeconds": 30
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/vizag-pro-file-processing-queue-EventSource/Resource"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/2WO3WrDMAyFn6X3jjYW2M/luq1Q2FhJHqCorup5caxgySsh5N1H3NGbXZ1POujo3MHjA9yu8CyVPXZV8AeYWkXbGTzLfiKboKGBxSuncY1CJmB/OCJMr2w7StseHW1ytOo5mpdTvPLbD0VtOSdLHzgMPrrF/r+dTWAn8M6uIaVYbqXeowipwPMiRmpYZ9uRlgYee5gaDrQEFt1x8HZcxgvNc7FIyiNzhZLWKrq/Np9Zh6yz2Y36xfGmhie4X32L91XKUX1P0Fz0F57VTUMnAQAA"
+   },
+   "Metadata": {
+    "aws:cdk:path": "OmInsightsFileProcessingStack/CDKMetadata/Default"
+   }
+  }
+ },
+ "Outputs": {
+  "SalesQueueUrl": {
+   "Value": {
+    "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefworkerqueueQueueAD4DD13CB063E749"
+   }
+  },
+  "InventoryQueueUrl": {
+   "Value": {
+    "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefinventoryqueueQueue8D928AA894D4F742"
+   }
+  },
+  "MarketingQueueUrl": {
+   "Value": {
+    "Fn::ImportValue": "OmInsightsBaseInfraStack:ExportsOutputRefmarketingqueueQueueA6E57B2347804BBC"
+   }
+  },
+  "LambdaFunctionName": {
+   "Value": {
+    "Ref": "RoutingLambdaF7AD8A1A"
+   }
+  },
+  "FileUploadBucketName": {
+   "Value": "om-insights-file-uploads-dev"
+  }
+ },
+ "Parameters": {
+  "BootstrapVersion": {
+   "Type": "AWS::SSM::Parameter::Value<String>",
+   "Default": "/cdk-bootstrap/hnb659fds/version",
+   "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+  }
+ },
+ "Rules": {
+  "CheckBootstrapVersion": {
+   "Assertions": [
+    {
+     "Assert": {
+      "Fn::Not": [
+       {
+        "Fn::Contains": [
+         [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+         ],
+         {
+          "Ref": "BootstrapVersion"
+         }
+        ]
+       }
+      ]
+     },
+     "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+    }
+   ]
+  }
+ }
+}

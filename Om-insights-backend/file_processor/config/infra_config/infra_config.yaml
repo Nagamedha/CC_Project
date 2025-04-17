@@ -1,0 +1,35 @@
+project_name: om-insights
+environment: dev
+
+bucket_name: om-insights-file-uploads-dev
+table_name: om-insights-file-metadata
+tables:
+  - worker
+  - inventory
+  - marketing
+  - customer
+
+regions:
+  - guntur
+  - hyderabad
+  - vizag
+
+aoss_region :
+  - amaravathi
+  - hyderabad
+
+subscription_tiers:
+  - free
+  - basic
+  - pro
+
+# Provide any additional SQS config as needed
+queues:
+  sales: worker-queue
+  inventory: inventory-queue
+  marketing: marketing-queue
+
+dynamodb_read_capacity: 5
+dynamodb_write_capacity: 5
+dynamodb_min_scaling: 5
+dynamodb_max_scaling: 100

@@ -1,0 +1,63 @@
+{
+  "settings": {
+    "index": {
+      "knn": true,
+      "number_of_shards": 1,
+      "number_of_replicas": 1,
+      "knn.algo_param.ef_search": 100,
+      "knn.algo_param.ef_construction": 128,
+      "knn.algo_param.m": 24
+    }
+  },
+  "mappings": {
+    "properties": {
+      "batch_id":          { "type": "integer" },
+      "business_id":       { "type": "keyword" },
+      "business_region":   { "type": "keyword" },
+      "data_type":         { "type": "keyword" },
+      "file_format":       { "type": "keyword" },
+      "subscription_type": { "type": "keyword" },
+      "timestamp":         { "type": "date" },
+
+      "sentences": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+
+      "sentiment_analysis": {
+        "properties": {
+          "sentiment": { "type": "keyword" },
+          "polarity":  { "type": "float" }
+        }
+      },
+
+      "indexed_metadata": {
+        "properties": {
+          "all":        { "type": "keyword" },
+          "dates":      { "type": "keyword" },
+          "entities":   { "type": "keyword" },
+          "keywords":   { "type": "keyword" },
+          "locations":  { "type": "keyword" },
+          "numbers":    { "type": "keyword" },
+          "ranked_keywords": {
+            "type": "nested",
+            "properties": {
+              "keyword": { "type": "text" },
+              "score":   { "type": "float" }
+            }
+          }
+        }
+      },
+
+      "embedding": {
+        "type": "knn_vector",
+        "dimension": 1536,
+        "method": {
+          "name": "hnsw",
+          "space_type": "innerproduct",
+          "engine": "faiss"
+        }
+      }
+    }
+  }
+}

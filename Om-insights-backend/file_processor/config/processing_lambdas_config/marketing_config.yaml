@@ -1,0 +1,12 @@
+MARKETING_SCHEMA = {
+    "campaign_id": ["campaign", "ad id"],
+    "ad_spend": ["budget", "total spend"],
+    "clicks": ["ad clicks", "impressions"],
+    "conversion_rate": ["conversion", "lead to sale rate"]
+}
+
+RULE_BASED_MAPPINGS = {
+    "budget": "ad_spend",
+    "clicks": "clicks",
+    "conversions": "conversion_rate"
+}

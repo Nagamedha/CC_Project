@@ -1,0 +1,19 @@
+# Sales configuration
+dynamodb:
+  routing_metadata:
+    table_name: routing-metadata
+  processing_results:
+    table_name: processing-results
+
+# AOSS Indexes
+aoss_indexes:
+  - "sales_template_v1.json"
+  - "inventory_template_v1.json"
+
+# AOSS Configuration
+aoss:
+  endpoint: "https://localhost:9201"
+  index_name: "sales_template_v1"
+
+# Note: The following comment is kept for reference, but it's not necessary in this file
+# config/infra_config/lambda_config.yaml
