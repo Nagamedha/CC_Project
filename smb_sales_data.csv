@@ -1,0 +1,501 @@
+Date,Category,Product,Price,Quantity,Total Sales,Customer ID,Payment Method
+2024-08-27,Health & Beauty,Perfume,167.76,2,335.52,3914,Credit Card
+2024-12-26,Toys,Doll,410.04,9,3690.36,1623,UPI
+2024-08-13,Electronics,Headphones,292.63,6,1755.78,4476,Cash
+2025-02-08,Groceries,Rice,466.9,3,1400.7,1385,Cash
+2024-06-23,Groceries,Vegetable Pack,300.39,9,2703.51,3561,Credit Card
+2024-08-30,Books,Cookbook,43.43,8,347.44,3660,UPI
+2025-01-23,Home & Kitchen,Blender,69.84,7,488.88,1116,Cash
+2025-03-01,Health & Beauty,Toothpaste,284.19,9,2557.71,4742,Net Banking
+2025-01-12,Books,Biography,45.79,1,45.79,4097,UPI
+2024-09-06,Groceries,Vegetable Pack,143.87,10,1438.7,2677,UPI
+2024-03-17,Health & Beauty,Shampoo,417.5,5,2087.5,3131,Cash
+2024-05-07,Electronics,Smartwatch,301.95,6,1811.7,2932,Cash
+2024-04-21,Toys,Lego Set,164.44,8,1315.52,4371,Net Banking
+2024-10-27,Health & Beauty,Toothpaste,343.2,1,343.2,4847,UPI
+2024-12-25,Groceries,Rice,479.88,5,2399.4,3367,UPI
+2024-08-27,Home & Kitchen,Blender,314.2,9,2827.8,2257,Net Banking
+2024-11-05,Home & Kitchen,Blender,281.91,5,1409.55,4401,Cash
+2024-08-27,Groceries,Rice,411.37,1,411.37,4663,Credit Card
+2024-07-05,Groceries,Vegetable Pack,315.98,6,1895.88,1562,Cash
+2024-05-17,Home & Kitchen,Cookware Set,339.04,8,2712.32,4082,Cash
+2024-06-30,Groceries,Vegetable Pack,54.05,9,486.45,4705,Credit Card
+2024-03-07,Health & Beauty,Perfume,332.56,2,665.12,4853,Credit Card
+2025-01-15,Toys,Lego Set,13.72,1,13.72,3432,UPI
+2024-09-05,Books,Biography,473.2,2,946.4,3066,Cash
+2024-04-07,Electronics,Headphones,170.85,7,1195.95,3602,Cash
+2024-10-02,Books,Biography,126.32,6,757.92,4476,Credit Card
+2024-11-13,Books,Biography,139.58,6,837.48,2299,Credit Card
+2024-05-17,Books,Science Book,81.79,6,490.74,3529,Net Banking
+2024-03-24,Groceries,Vegetable Pack,329.43,8,2635.44,3823,Net Banking
+2024-06-04,Electronics,Smartwatch,135.19,2,270.38,3608,Credit Card
+2024-04-04,Toys,Lego Set,437.77,3,1313.31,1995,Cash
+2024-04-01,Books,Fiction Novel,177.31,8,1418.48,3536,Cash
+2024-12-31,Electronics,Headphones,101.5,9,913.5,3095,Cash
+2024-07-22,Toys,Lego Set,382.02,7,2674.14,3080,Credit Card
+2025-01-21,Home & Kitchen,Cookware Set,477.75,2,955.5,3420,Credit Card
+2024-11-12,Books,Cookbook,390.94,6,2345.64,3365,Cash
+2024-10-20,Toys,Doll,433.08,1,433.08,2984,UPI
+2024-08-27,Clothing,T-shirt,63.08,6,378.48,3072,UPI
+2024-05-15,Home & Kitchen,Cookware Set,274.31,3,822.93,4459,Net Banking
+2024-11-12,Groceries,Rice,395.56,7,2768.92,4144,Credit Card
+2024-05-07,Home & Kitchen,Vacuum Cleaner,106.42,4,425.68,3082,Net Banking
+2024-09-13,Books,Science Book,349.19,9,3142.71,3064,Net Banking
+2024-07-17,Groceries,Bread,482.6,1,482.6,2123,Credit Card
+2024-06-13,Clothing,T-shirt,420.6,2,841.2,1237,Net Banking
+2024-06-21,Toys,Action Figure,462.26,6,2773.56,1341,Net Banking
+2024-06-21,Health & Beauty,Face Cream,348.47,8,2787.76,4013,Cash
+2024-08-09,Books,Science Book,140.07,7,980.49,2131,Cash
+2024-11-20,Toys,Doll,298.62,6,1791.72,4554,Net Banking
+2024-09-16,Home & Kitchen,Vacuum Cleaner,471.64,5,2358.2,1599,Net Banking
+2024-03-27,Home & Kitchen,Vacuum Cleaner,166.05,3,498.15,2279,Cash
+2024-06-30,Health & Beauty,Perfume,173.78,10,1737.8,2340,Credit Card
+2025-01-09,Books,Fiction Novel,246.85,9,2221.65,1466,Cash
+2024-05-17,Toys,Board Game,444.65,3,1333.95,4973,Net Banking
+2024-06-24,Electronics,Laptop,20.75,9,186.75,3698,Cash
+2024-10-28,Groceries,Milk,316.91,1,316.91,2748,Credit Card
+2024-08-28,Books,Cookbook,372.64,9,3353.76,3321,Net Banking
+2024-11-12,Electronics,Laptop,233.26,5,1166.3,4035,UPI
+2025-01-03,Electronics,Smartphone,493.48,8,3947.84,1716,Credit Card
+2024-09-20,Electronics,Headphones,37.52,7,262.64,4152,Cash
+2024-04-09,Health & Beauty,Perfume,394.67,3,1184.01,3160,UPI
+2025-02-22,Books,Science Book,425.93,1,425.93,2501,Net Banking
+2024-11-22,Electronics,Smartwatch,335.24,9,3017.16,3344,UPI
+2024-07-22,Home & Kitchen,Microwave,474.37,10,4743.7,2063,Cash
+2024-03-02,Books,Cookbook,453.35,8,3626.8,4742,Credit Card
+2024-09-01,Home & Kitchen,Cookware Set,134.7,7,942.9,4808,UPI
+2024-03-27,Books,Science Book,48.6,2,97.2,4033,Net Banking
+2024-07-28,Books,Cookbook,411.2,6,2467.2,1177,Credit Card
+2024-10-03,Books,Cookbook,395.92,1,395.92,2614,Credit Card
+2024-12-07,Toys,Lego Set,205.68,5,1028.4,1014,Cash
+2024-06-07,Health & Beauty,Perfume,99.12,6,594.72,2620,Credit Card
+2024-08-16,Electronics,Smartphone,129.68,9,1167.12,4983,Net Banking
+2025-01-09,Health & Beauty,Face Cream,77.33,10,773.3,3197,Cash
+2024-03-10,Toys,Lego Set,35.7,6,214.2,3219,Credit Card
+2024-06-01,Clothing,Dress,27.83,2,55.66,1306,UPI
+2024-07-01,Books,Fiction Novel,329.01,8,2632.08,3938,Credit Card
+2024-08-28,Clothing,Jacket,259.24,4,1036.96,3967,Credit Card
+2024-12-22,Toys,Action Figure,194.73,2,389.46,4785,Cash
+2024-12-07,Groceries,Bread,79.19,2,158.38,2748,Net Banking
+2024-04-10,Health & Beauty,Face Cream,333.19,3,999.57,4238,UPI
+2024-04-03,Home & Kitchen,Blender,245.95,5,1229.75,2949,UPI
+2024-04-23,Clothing,T-shirt,485.0,9,4365.0,3205,Net Banking
+2024-12-25,Electronics,Headphones,189.67,7,1327.69,1729,Cash
+2024-09-07,Electronics,Headphones,336.7,9,3030.3,3491,Cash
+2024-03-05,Toys,Doll,442.74,6,2656.44,2382,Credit Card
+2024-06-28,Clothing,Jacket,413.52,9,3721.68,3509,Cash
+2024-03-22,Home & Kitchen,Blender,469.24,1,469.24,1864,Credit Card
+2024-07-17,Books,Cookbook,126.56,9,1139.04,2546,Credit Card
+2024-11-30,Groceries,Bread,482.67,8,3861.36,4834,Net Banking
+2024-03-10,Groceries,Bread,204.67,2,409.34,4834,UPI
+2024-09-10,Clothing,T-shirt,401.52,1,401.52,3830,Net Banking
+2024-09-07,Clothing,Jacket,302.98,8,2423.84,2191,Net Banking
+2024-05-07,Toys,Board Game,93.46,2,186.92,1555,Cash
+2024-06-07,Home & Kitchen,Cookware Set,205.46,3,616.38,1246,UPI
+2024-07-27,Groceries,Vegetable Pack,372.07,7,2604.49,3042,Cash
+2024-04-09,Home & Kitchen,Blender,208.61,8,1668.88,2383,Cash
+2025-02-09,Electronics,Smartphone,335.09,2,670.18,3266,Credit Card
+2024-10-01,Clothing,T-shirt,46.9,9,422.1,4026,Credit Card
+2024-12-19,Books,Cookbook,313.04,2,626.08,1836,Cash
+2024-04-17,Books,Cookbook,59.24,3,177.72,4381,Cash
+2024-06-13,Health & Beauty,Shampoo,34.85,10,348.5,4707,Credit Card
+2024-08-12,Groceries,Rice,297.43,7,2082.01,2284,UPI
+2024-03-26,Home & Kitchen,Blender,208.76,3,626.28,3836,Net Banking
+2025-01-15,Groceries,Bread,252.77,5,1263.85,1734,Credit Card
+2024-09-13,Toys,Doll,191.6,6,1149.6,2369,Credit Card
+2024-05-15,Toys,Action Figure,406.88,10,4068.8,3995,Cash
+2024-11-26,Clothing,Dress,201.87,6,1211.22,2897,UPI
+2025-02-20,Books,Fiction Novel,412.21,5,2061.05,4678,Credit Card
+2025-02-27,Clothing,Jacket,299.88,1,299.88,2703,UPI
+2024-04-20,Groceries,Milk,403.78,4,1615.12,1307,UPI
+2024-06-13,Toys,Lego Set,419.33,2,838.66,3653,Net Banking
+2024-09-23,Health & Beauty,Face Cream,9.44,4,37.76,2989,Credit Card
+2024-04-17,Toys,Board Game,336.85,4,1347.4,2214,UPI
+2024-03-06,Groceries,Vegetable Pack,359.67,8,2877.36,3957,Net Banking
+2024-11-20,Home & Kitchen,Blender,384.55,8,3076.4,3297,Credit Card
+2024-04-11,Books,Science Book,419.5,5,2097.5,1399,Credit Card
+2024-04-05,Clothing,Jacket,179.09,10,1790.9,3996,Cash
+2024-04-28,Toys,Board Game,200.34,6,1202.04,3351,UPI
+2024-05-31,Books,Science Book,62.39,10,623.9,1245,Cash
+2024-06-21,Books,Biography,499.25,10,4992.5,3197,UPI
+2024-04-11,Clothing,Jeans,108.92,3,326.76,1868,Cash
+2025-02-21,Home & Kitchen,Vacuum Cleaner,352.6,2,705.2,2862,UPI
+2024-11-12,Health & Beauty,Toothpaste,104.65,4,418.6,2010,Net Banking
+2024-04-17,Clothing,Jeans,156.09,9,1404.81,2008,Cash
+2024-12-26,Groceries,Rice,373.7,7,2615.9,1123,Cash
+2025-03-02,Groceries,Milk,52.58,6,315.48,2022,Cash
+2024-08-05,Books,Science Book,332.59,8,2660.72,3449,Net Banking
+2024-11-12,Clothing,Jacket,449.64,10,4496.4,4503,Credit Card
+2024-04-28,Groceries,Rice,244.8,8,1958.4,3229,UPI
+2024-08-30,Clothing,Dress,410.0,10,4100.0,1306,Net Banking
+2025-02-26,Health & Beauty,Toothpaste,274.28,8,2194.24,1108,UPI
+2024-07-02,Health & Beauty,Perfume,82.3,3,246.9,1688,Credit Card
+2024-03-10,Books,Cookbook,441.64,10,4416.4,4324,Credit Card
+2024-10-27,Clothing,Dress,77.3,1,77.3,1602,Credit Card
+2024-08-21,Home & Kitchen,Blender,63.71,7,445.97,2734,UPI
+2024-12-15,Books,Fiction Novel,412.52,4,1650.08,2958,UPI
+2024-06-12,Electronics,Smartwatch,202.76,3,608.28,2496,UPI
+2024-12-25,Groceries,Bread,428.0,5,2140.0,2261,Credit Card
+2024-04-20,Toys,Doll,326.99,5,1634.95,1498,Credit Card
+2024-04-11,Health & Beauty,Shampoo,379.03,9,3411.27,3600,Net Banking
+2024-07-17,Health & Beauty,Face Cream,327.44,2,654.88,2571,Credit Card
+2025-01-03,Toys,Action Figure,213.58,2,427.16,1057,Credit Card
+2024-11-12,Home & Kitchen,Blender,380.83,9,3427.47,4634,Cash
+2024-03-13,Groceries,Rice,82.57,8,660.56,1299,Cash
+2024-12-11,Toys,Doll,327.68,4,1310.72,2211,UPI
+2024-12-21,Books,Fiction Novel,188.63,2,377.26,1372,Net Banking
+2024-10-31,Books,Fiction Novel,363.72,10,3637.2,1004,Net Banking
+2024-04-12,Health & Beauty,Shampoo,459.24,4,1836.96,4975,Cash
+2024-08-10,Home & Kitchen,Cookware Set,151.71,6,910.26,4739,UPI
+2025-01-03,Groceries,Milk,311.92,5,1559.6,4247,Cash
+2024-08-09,Toys,Board Game,494.99,8,3959.92,1230,Credit Card
+2024-09-19,Electronics,Smartphone,52.38,10,523.8,1218,Net Banking
+2024-10-24,Home & Kitchen,Cookware Set,366.76,6,2200.56,4337,Cash
+2024-05-12,Clothing,Dress,46.04,4,184.16,1768,UPI
+2024-07-01,Groceries,Vegetable Pack,131.82,5,659.1,2081,Net Banking
+2025-01-01,Clothing,Jeans,207.53,10,2075.3,2054,Cash
+2024-06-15,Health & Beauty,Face Cream,244.76,3,734.28,2500,UPI
+2024-06-13,Groceries,Milk,429.28,10,4292.8,3040,Cash
+2024-11-15,Home & Kitchen,Vacuum Cleaner,208.98,5,1044.9,1243,Credit Card
+2024-04-09,Toys,Board Game,155.04,6,930.24,2026,Credit Card
+2024-06-13,Groceries,Bread,32.56,8,260.48,3511,Cash
+2024-04-25,Clothing,T-shirt,18.79,5,93.95,1656,Cash
+2024-04-22,Toys,Board Game,412.96,10,4129.6,1814,Cash
+2024-11-13,Books,Biography,455.0,6,2730.0,2186,UPI
+2024-07-12,Health & Beauty,Shampoo,304.93,7,2134.51,3087,Credit Card
+2024-10-28,Toys,Doll,340.21,2,680.42,4835,Cash
+2024-11-03,Toys,Action Figure,151.92,2,303.84,4849,UPI
+2024-10-02,Toys,Board Game,380.1,3,1140.3,2558,UPI
+2024-08-17,Health & Beauty,Toothpaste,324.81,3,974.43,2562,Cash
+2024-08-05,Clothing,Jacket,41.13,6,246.78,3837,Credit Card
+2024-09-09,Toys,Lego Set,131.65,7,921.55,2968,Credit Card
+2024-10-22,Electronics,Smartwatch,34.67,9,312.03,3007,Net Banking
+2025-01-03,Electronics,Smartphone,430.25,6,2581.5,2378,UPI
+2024-08-23,Toys,Board Game,172.32,3,516.96,3577,Cash
+2024-11-05,Clothing,Jeans,336.19,2,672.38,2283,Cash
+2025-01-17,Groceries,Vegetable Pack,164.97,6,989.82,4999,Credit Card
+2024-07-17,Health & Beauty,Face Cream,156.76,6,940.56,2171,UPI
+2024-11-08,Health & Beauty,Shampoo,230.38,4,921.52,2950,UPI
+2025-02-16,Health & Beauty,Perfume,109.39,3,328.17,4725,UPI
+2024-05-01,Clothing,T-shirt,47.32,2,94.64,4062,UPI
+2024-08-27,Groceries,Vegetable Pack,59.51,6,357.06,4815,UPI
+2024-03-19,Toys,Action Figure,340.49,7,2383.43,4973,UPI
+2025-02-20,Electronics,Laptop,495.43,5,2477.15,3531,Cash
+2024-04-15,Toys,Action Figure,89.21,10,892.1,1876,Credit Card
+2024-05-17,Clothing,Jeans,95.0,5,475.0,2417,Cash
+2024-04-04,Home & Kitchen,Cookware Set,153.86,2,307.72,1385,Cash
+2024-12-19,Toys,Lego Set,180.24,5,901.2,1761,Net Banking
+2024-06-01,Groceries,Milk,95.9,3,287.7,3108,Credit Card
+2024-03-27,Clothing,Jeans,403.07,6,2418.42,2872,Net Banking
+2025-01-31,Health & Beauty,Shampoo,76.53,5,382.65,3565,Cash
+2024-10-18,Electronics,Headphones,251.64,8,2013.12,2390,Credit Card
+2025-02-12,Books,Cookbook,149.14,8,1193.12,2141,Net Banking
+2025-02-03,Health & Beauty,Shampoo,485.21,3,1455.63,3700,Credit Card
+2024-10-26,Clothing,T-shirt,14.21,7,99.47,2173,Net Banking
+2024-11-13,Books,Science Book,135.31,4,541.24,3388,Net Banking
+2024-08-18,Home & Kitchen,Vacuum Cleaner,48.45,3,145.35,3830,Net Banking
+2025-01-01,Health & Beauty,Shampoo,17.93,3,53.79,2064,Credit Card
+2024-07-12,Books,Fiction Novel,440.39,2,880.78,3860,UPI
+2025-02-12,Groceries,Rice,311.21,10,3112.1,1420,UPI
+2024-04-22,Clothing,Jacket,420.99,7,2946.93,4037,Cash
+2025-02-07,Groceries,Milk,374.36,7,2620.52,4720,Credit Card
+2024-03-09,Groceries,Milk,32.85,5,164.25,3897,UPI
+2024-03-19,Toys,Action Figure,63.38,9,570.42,2949,Cash
+2024-06-01,Electronics,Laptop,77.12,10,771.2,1997,Credit Card
+2024-03-02,Electronics,Headphones,245.17,1,245.17,3274,UPI
+2024-09-01,Home & Kitchen,Microwave,487.53,3,1462.59,2277,Cash
+2024-06-30,Electronics,Laptop,43.22,9,388.98,4214,UPI
+2024-06-22,Clothing,Jacket,204.93,1,204.93,4676,UPI
+2024-04-26,Books,Cookbook,160.48,6,962.88,2741,Credit Card
+2024-03-16,Books,Fiction Novel,25.78,4,103.12,4186,Cash
+2024-12-19,Clothing,Jeans,257.45,8,2059.6,4440,Cash
+2025-02-26,Toys,Board Game,169.07,7,1183.49,2547,UPI
+2024-12-03,Clothing,Jeans,67.33,4,269.32,2724,Net Banking
+2024-06-04,Health & Beauty,Toothpaste,484.95,5,2424.75,1502,UPI
+2025-01-25,Health & Beauty,Shampoo,215.49,1,215.49,3868,Cash
+2025-02-10,Clothing,Dress,474.7,7,3322.9,1012,UPI
+2024-03-08,Electronics,Smartwatch,192.17,6,1153.02,2695,Credit Card
+2024-04-13,Books,Biography,136.6,6,819.6,3799,Net Banking
+2024-09-26,Health & Beauty,Shampoo,55.15,9,496.35,4907,Cash
+2024-12-26,Home & Kitchen,Blender,129.23,1,129.23,2290,UPI
+2024-11-12,Groceries,Rice,410.15,6,2460.9,2949,UPI
+2024-11-09,Health & Beauty,Toothpaste,297.32,9,2675.88,3755,Cash
+2025-02-27,Home & Kitchen,Blender,72.6,5,363.0,2991,Credit Card
+2024-06-11,Health & Beauty,Perfume,461.57,6,2769.42,2770,Cash
+2024-05-29,Clothing,Dress,55.63,1,55.63,4173,Net Banking
+2024-10-03,Clothing,Jeans,488.87,10,4888.7,3806,Net Banking
+2024-12-05,Electronics,Laptop,444.06,3,1332.18,3891,Credit Card
+2024-09-09,Groceries,Vegetable Pack,126.77,2,253.54,2956,UPI
+2024-03-27,Groceries,Bread,160.63,3,481.89,2221,Credit Card
+2024-10-04,Clothing,T-shirt,462.41,10,4624.1,1297,Credit Card
+2024-03-31,Electronics,Smartwatch,70.53,7,493.71,2523,Credit Card
+2024-10-12,Toys,Doll,413.68,1,413.68,4940,Cash
+2024-11-26,Clothing,T-shirt,354.91,9,3194.19,1903,Cash
+2024-11-05,Groceries,Vegetable Pack,105.97,5,529.85,2741,Net Banking
+2024-11-15,Groceries,Milk,474.39,8,3795.12,2758,UPI
+2025-02-20,Groceries,Vegetable Pack,85.05,7,595.35,3831,Credit Card
+2025-01-03,Groceries,Bread,370.7,1,370.7,3150,Credit Card
+2024-03-19,Home & Kitchen,Cookware Set,219.3,9,1973.7,3925,Cash
+2024-04-11,Toys,Board Game,431.04,10,4310.4,2535,Net Banking
+2024-11-23,Toys,Lego Set,203.63,1,203.63,3941,UPI
+2025-01-01,Groceries,Rice,180.54,1,180.54,2015,UPI
+2024-10-17,Clothing,Jacket,494.33,4,1977.32,3160,Net Banking
+2025-02-05,Groceries,Rice,186.43,4,745.72,3062,Net Banking
+2025-02-08,Groceries,Milk,236.67,7,1656.69,2650,Cash
+2024-12-25,Electronics,Laptop,329.03,2,658.06,4335,Credit Card
+2024-05-31,Toys,Action Figure,225.66,2,451.32,2787,Net Banking
+2024-08-28,Electronics,Laptop,426.52,9,3838.68,4990,Net Banking
+2024-09-19,Health & Beauty,Shampoo,201.67,4,806.68,2854,UPI
+2025-02-26,Electronics,Laptop,372.81,7,2609.67,3828,Credit Card
+2025-02-02,Toys,Action Figure,449.38,6,2696.28,2827,UPI
+2024-11-23,Groceries,Rice,128.5,1,128.5,2782,Cash
+2025-02-26,Books,Cookbook,426.13,3,1278.39,2508,Net Banking
+2024-03-27,Books,Fiction Novel,257.97,8,2063.76,3539,Net Banking
+2024-03-27,Electronics,Smartphone,168.42,8,1347.36,2773,Cash
+2024-10-28,Books,Biography,376.91,5,1884.55,3545,Net Banking
+2024-06-23,Toys,Lego Set,182.25,8,1458.0,4954,UPI
+2024-04-28,Electronics,Laptop,61.15,5,305.75,4086,Credit Card
+2024-07-20,Home & Kitchen,Cookware Set,462.95,1,462.95,3468,Credit Card
+2024-04-11,Clothing,Jacket,324.5,3,973.5,1431,Credit Card
+2024-06-06,Books,Fiction Novel,478.72,5,2393.6,3692,Credit Card
+2024-05-01,Clothing,T-shirt,477.92,1,477.92,3852,UPI
+2025-02-22,Groceries,Milk,93.0,8,744.0,4822,UPI
+2024-09-17,Groceries,Rice,402.7,1,402.7,1973,UPI
+2024-05-25,Clothing,Jeans,208.76,10,2087.6,3109,Cash
+2024-03-03,Home & Kitchen,Cookware Set,405.04,2,810.08,4452,Cash
+2025-02-22,Health & Beauty,Toothpaste,444.33,10,4443.3,3085,Cash
+2024-10-01,Health & Beauty,Perfume,263.3,10,2633.0,1370,Cash
+2024-06-12,Health & Beauty,Face Cream,292.0,1,292.0,3737,UPI
+2024-05-01,Groceries,Rice,387.49,2,774.98,1612,Cash
+2024-09-09,Home & Kitchen,Vacuum Cleaner,54.86,10,548.6,3627,Cash
+2025-01-21,Books,Biography,272.58,1,272.58,1785,Credit Card
+2025-02-22,Electronics,Headphones,499.79,5,2498.95,1445,UPI
+2024-08-27,Clothing,Dress,333.4,2,666.8,3297,Cash
+2024-07-02,Toys,Action Figure,119.97,7,839.79,1364,Credit Card
+2024-11-13,Clothing,Dress,167.68,2,335.36,1496,Credit Card
+2024-06-30,Groceries,Bread,395.1,8,3160.8,2995,Net Banking
+2024-03-23,Groceries,Rice,384.25,4,1537.0,4651,Credit Card
+2024-03-30,Electronics,Laptop,439.6,6,2637.6,2832,Cash
+2024-09-01,Groceries,Vegetable Pack,115.72,3,347.16,4281,UPI
+2024-08-27,Electronics,Smartwatch,376.67,5,1883.35,4845,Credit Card
+2024-04-22,Clothing,Jacket,117.52,6,705.12,2542,Cash
+2024-03-11,Home & Kitchen,Blender,66.78,5,333.9,3952,Credit Card
+2024-12-26,Books,Fiction Novel,464.1,2,928.2,3500,Credit Card
+2024-05-23,Clothing,T-shirt,233.03,3,699.09,4448,Credit Card
+2024-03-27,Home & Kitchen,Blender,358.02,1,358.02,4236,Credit Card
+2024-09-13,Toys,Doll,478.64,10,4786.4,3594,UPI
+2024-05-28,Toys,Action Figure,387.72,1,387.72,2865,Net Banking
+2024-04-22,Electronics,Headphones,326.78,2,653.56,1511,Credit Card
+2024-06-24,Books,Biography,189.84,1,189.84,4118,Cash
+2024-05-17,Books,Fiction Novel,469.07,3,1407.21,3527,Net Banking
+2025-01-07,Health & Beauty,Toothpaste,137.31,8,1098.48,1199,UPI
+2024-09-11,Books,Cookbook,348.91,4,1395.64,1355,Cash
+2025-01-12,Toys,Doll,224.86,9,2023.74,3909,Credit Card
+2024-10-15,Health & Beauty,Perfume,290.91,2,581.82,3034,Cash
+2024-07-22,Toys,Action Figure,337.03,7,2359.21,3670,Cash
+2024-06-21,Health & Beauty,Toothpaste,428.09,2,856.18,3879,Net Banking
+2024-04-17,Electronics,Headphones,287.34,7,2011.38,1271,Net Banking
+2024-08-20,Health & Beauty,Perfume,483.73,7,3386.11,4664,Credit Card
+2024-07-20,Home & Kitchen,Cookware Set,380.21,5,1901.05,1366,Cash
+2024-06-23,Home & Kitchen,Blender,487.61,3,1462.83,2299,Cash
+2024-04-28,Groceries,Vegetable Pack,213.25,6,1279.5,3333,Credit Card
+2025-02-26,Groceries,Vegetable Pack,227.56,1,227.56,4519,Cash
+2024-03-23,Electronics,Smartphone,451.24,8,3609.92,4147,Cash
+2024-10-02,Groceries,Bread,194.32,4,777.28,1773,Credit Card
+2024-12-05,Groceries,Bread,421.74,9,3795.66,3073,Credit Card
+2025-02-08,Toys,Board Game,463.03,7,3241.21,3800,Credit Card
+2025-02-21,Health & Beauty,Shampoo,310.55,5,1552.75,3000,Credit Card
+2025-02-26,Home & Kitchen,Blender,410.14,1,410.14,1040,UPI
+2024-10-30,Home & Kitchen,Microwave,446.66,8,3573.28,2838,Cash
+2024-09-11,Home & Kitchen,Microwave,106.09,9,954.81,1592,Net Banking
+2025-01-15,Health & Beauty,Shampoo,253.0,5,1265.0,3899,UPI
+2024-06-20,Toys,Lego Set,352.08,2,704.16,2983,Net Banking
+2024-03-18,Books,Biography,362.43,4,1449.72,2798,Cash
+2024-08-27,Electronics,Laptop,100.7,2,201.4,1426,Credit Card
+2025-01-21,Groceries,Milk,349.12,9,3142.08,1622,Cash
+2024-06-30,Electronics,Laptop,338.09,9,3042.81,3939,Cash
+2024-07-02,Home & Kitchen,Blender,66.71,7,466.97,1199,Net Banking
+2025-01-15,Books,Biography,72.49,5,362.45,4435,Net Banking
+2024-10-31,Electronics,Smartwatch,348.11,6,2088.66,2052,Credit Card
+2024-07-14,Clothing,Jacket,103.57,4,414.28,3232,Net Banking
+2024-08-28,Electronics,Smartphone,36.46,6,218.76,3027,Cash
+2025-01-07,Books,Science Book,457.79,10,4577.9,4004,Net Banking
+2024-03-17,Health & Beauty,Shampoo,136.2,4,544.8,3740,Cash
+2024-12-06,Electronics,Laptop,347.57,8,2780.56,2683,Cash
+2025-01-06,Health & Beauty,Face Cream,309.24,10,3092.4,1574,Cash
+2024-11-10,Health & Beauty,Shampoo,36.29,5,181.45,2751,Credit Card
+2025-01-06,Groceries,Bread,459.56,8,3676.48,4939,UPI
+2024-11-26,Health & Beauty,Toothpaste,324.71,5,1623.55,4718,UPI
+2024-12-24,Books,Cookbook,459.71,4,1838.84,1335,Net Banking
+2024-03-10,Groceries,Milk,226.18,3,678.54,4346,Cash
+2025-01-01,Health & Beauty,Perfume,253.78,2,507.56,3684,Net Banking
+2024-08-21,Groceries,Vegetable Pack,39.71,2,79.42,1300,Credit Card
+2024-06-21,Books,Cookbook,409.96,2,819.92,4797,Credit Card
+2024-04-22,Home & Kitchen,Blender,416.68,3,1250.04,1101,Cash
+2024-03-19,Electronics,Headphones,393.03,5,1965.15,3506,Cash
+2024-06-30,Groceries,Rice,338.01,10,3380.1,4443,UPI
+2024-07-09,Home & Kitchen,Blender,372.93,1,372.93,1315,Credit Card
+2025-02-26,Books,Biography,385.0,2,770.0,2881,UPI
+2025-02-25,Electronics,Smartphone,427.13,9,3844.17,1228,UPI
+2024-11-24,Books,Fiction Novel,193.86,2,387.72,3944,Cash
+2024-09-29,Health & Beauty,Toothpaste,262.46,1,262.46,4111,Cash
+2024-06-13,Books,Cookbook,29.31,8,234.48,1044,Cash
+2024-06-28,Electronics,Smartphone,227.24,5,1136.2,4988,Cash
+2024-10-01,Health & Beauty,Shampoo,441.02,10,4410.2,3444,Cash
+2024-11-09,Toys,Lego Set,469.54,5,2347.7,2116,Cash
+2024-07-17,Toys,Doll,316.33,10,3163.3,4606,Credit Card
+2024-10-28,Toys,Lego Set,145.45,1,145.45,4773,UPI
+2024-07-19,Groceries,Bread,275.44,10,2754.4,2614,UPI
+2024-06-13,Books,Cookbook,353.29,6,2119.74,3728,UPI
+2024-08-16,Toys,Doll,285.94,5,1429.7,1299,UPI
+2024-09-26,Health & Beauty,Toothpaste,89.42,6,536.52,2014,Net Banking
+2024-11-01,Groceries,Vegetable Pack,351.57,6,2109.42,4824,UPI
+2024-06-09,Books,Cookbook,27.4,6,164.4,2769,UPI
+2024-07-22,Clothing,Jacket,437.15,2,874.3,1970,UPI
+2024-07-11,Toys,Lego Set,56.74,8,453.92,1767,UPI
+2024-12-11,Home & Kitchen,Blender,470.64,10,4706.4,1832,Cash
+2024-07-17,Books,Fiction Novel,163.11,2,326.22,3184,UPI
+2024-06-12,Health & Beauty,Toothpaste,362.95,9,3266.55,2955,Credit Card
+2024-11-30,Groceries,Vegetable Pack,272.28,4,1089.12,2287,Credit Card
+2024-06-24,Toys,Board Game,111.49,7,780.43,4190,Credit Card
+2024-10-01,Books,Fiction Novel,392.86,6,2357.16,4567,Credit Card
+2024-09-16,Books,Biography,397.41,6,2384.46,2942,Credit Card
+2024-12-27,Electronics,Smartphone,232.65,10,2326.5,4215,Credit Card
+2024-09-05,Clothing,Jeans,164.94,7,1154.58,4158,Credit Card
+2024-04-28,Toys,Action Figure,291.83,9,2626.47,4529,Credit Card
+2024-12-31,Clothing,T-shirt,410.13,6,2460.78,4682,Cash
+2025-02-24,Home & Kitchen,Blender,166.53,7,1165.71,4053,UPI
+2025-02-11,Home & Kitchen,Vacuum Cleaner,116.79,1,116.79,1213,UPI
+2024-09-29,Electronics,Smartwatch,44.25,7,309.75,4580,UPI
+2024-11-05,Electronics,Smartphone,351.31,10,3513.1,3035,UPI
+2024-09-15,Health & Beauty,Perfume,375.67,8,3005.36,3278,Credit Card
+2024-07-14,Clothing,Dress,190.19,4,760.76,2007,UPI
+2024-09-28,Clothing,Jeans,420.63,9,3785.67,4131,Cash
+2024-03-27,Toys,Board Game,78.33,7,548.31,4997,Credit Card
+2024-11-26,Electronics,Laptop,234.38,7,1640.66,1898,Net Banking
+2024-10-04,Groceries,Milk,89.93,10,899.3,3355,UPI
+2025-02-07,Books,Science Book,279.9,7,1959.3,1514,UPI
+2025-01-06,Electronics,Laptop,344.31,5,1721.55,1566,Credit Card
+2024-11-10,Toys,Board Game,33.43,9,300.87,1563,UPI
+2024-07-06,Electronics,Laptop,444.5,6,2667.0,4005,UPI
+2024-08-21,Health & Beauty,Toothpaste,47.78,4,191.12,4693,Net Banking
+2024-12-30,Electronics,Laptop,165.31,6,991.86,1211,Credit Card
+2024-06-28,Health & Beauty,Face Cream,103.78,7,726.46,2246,Net Banking
+2024-11-01,Groceries,Rice,96.69,9,870.21,2395,Net Banking
+2024-09-23,Groceries,Milk,214.82,6,1288.92,1820,Cash
+2024-07-24,Toys,Board Game,259.44,5,1297.2,2440,UPI
+2024-11-01,Books,Biography,86.04,9,774.36,3092,Cash
+2024-11-14,Home & Kitchen,Cookware Set,405.42,3,1216.26,4633,Cash
+2024-06-27,Home & Kitchen,Microwave,449.1,6,2694.6,3677,Cash
+2025-01-17,Toys,Doll,16.47,6,98.82,2571,UPI
+2024-05-02,Electronics,Smartphone,380.48,4,1521.92,4451,Cash
+2024-04-15,Electronics,Laptop,333.32,9,2999.88,2969,Net Banking
+2024-10-01,Groceries,Vegetable Pack,198.7,3,596.1,4547,Credit Card
+2024-03-18,Health & Beauty,Shampoo,393.31,1,393.31,4778,Credit Card
+2025-02-21,Groceries,Milk,358.39,6,2150.34,4169,UPI
+2024-05-22,Clothing,Jeans,443.31,5,2216.55,1525,UPI
+2024-08-04,Books,Cookbook,191.36,8,1530.88,1757,UPI
+2024-05-10,Health & Beauty,Face Cream,342.44,10,3424.4,1849,UPI
+2024-05-01,Toys,Doll,19.68,6,118.08,4408,Net Banking
+2024-06-30,Health & Beauty,Shampoo,480.14,7,3360.98,4612,Net Banking
+2025-01-01,Groceries,Milk,134.22,8,1073.76,4008,Net Banking
+2024-04-25,Toys,Board Game,44.07,7,308.49,3468,Credit Card
+2024-12-30,Toys,Doll,406.13,2,812.26,2248,UPI
+2025-02-22,Electronics,Laptop,371.38,9,3342.42,3469,Net Banking
+2024-07-24,Groceries,Bread,77.25,3,231.75,1913,UPI
+2024-12-07,Toys,Board Game,491.4,4,1965.6,1356,Net Banking
+2024-12-26,Home & Kitchen,Microwave,478.95,9,4310.55,4826,UPI
+2024-05-25,Toys,Action Figure,254.5,3,763.5,4824,Credit Card
+2024-03-17,Health & Beauty,Perfume,135.17,7,946.19,2604,UPI
+2025-01-22,Groceries,Bread,346.62,9,3119.58,4773,UPI
+2024-07-11,Electronics,Headphones,238.08,3,714.24,1442,Credit Card
+2024-03-11,Home & Kitchen,Microwave,62.14,8,497.12,4289,Net Banking
+2024-09-28,Home & Kitchen,Vacuum Cleaner,255.14,3,765.42,2987,Cash
+2024-11-26,Clothing,Dress,159.71,3,479.13,1334,Net Banking
+2024-04-11,Toys,Action Figure,401.32,8,3210.56,1864,Cash
+2024-11-19,Health & Beauty,Shampoo,210.07,3,630.21,2989,UPI
+2024-10-27,Electronics,Smartwatch,162.64,5,813.2,4554,UPI
+2025-03-01,Electronics,Smartphone,314.29,4,1257.16,3685,Cash
+2024-06-19,Health & Beauty,Face Cream,270.77,7,1895.39,4486,UPI
+2025-02-21,Clothing,Jacket,181.03,7,1267.21,4561,UPI
+2024-11-03,Groceries,Milk,103.99,1,103.99,1513,UPI
+2024-09-07,Toys,Doll,204.18,2,408.36,3557,Credit Card
+2024-12-31,Groceries,Bread,404.87,4,1619.48,1302,Net Banking
+2024-10-20,Groceries,Milk,275.59,10,2755.9,1225,UPI
+2024-08-29,Health & Beauty,Shampoo,371.56,4,1486.24,2763,Net Banking
+2024-06-30,Health & Beauty,Face Cream,107.68,8,861.44,1834,UPI
+2024-03-08,Health & Beauty,Toothpaste,20.43,3,61.29,3734,Credit Card
+2024-08-10,Books,Cookbook,238.5,7,1669.5,4769,Cash
+2024-05-01,Health & Beauty,Face Cream,498.43,6,2990.58,4674,Cash
+2024-07-02,Home & Kitchen,Cookware Set,250.65,8,2005.2,4245,Cash
+2024-12-28,Clothing,Jacket,394.99,10,3949.9,3200,Net Banking
+2024-10-03,Books,Fiction Novel,171.37,1,171.37,2577,Cash
+2024-05-22,Clothing,Dress,386.02,9,3474.18,1330,Credit Card
+2024-11-16,Home & Kitchen,Blender,416.09,10,4160.9,3740,Cash
+2024-10-18,Health & Beauty,Face Cream,379.52,1,379.52,4901,Credit Card
+2024-12-31,Groceries,Bread,108.97,7,762.79,4508,Cash
+2024-06-13,Home & Kitchen,Vacuum Cleaner,295.41,1,295.41,3658,Cash
+2024-09-19,Home & Kitchen,Cookware Set,318.22,3,954.66,1098,Credit Card
+2025-02-26,Books,Fiction Novel,450.84,1,450.84,2278,Net Banking
+2024-06-13,Electronics,Smartphone,114.94,6,689.64,3985,UPI
+2024-06-20,Electronics,Laptop,321.75,10,3217.5,2745,Cash
+2025-01-09,Clothing,Jacket,428.05,2,856.1,3176,UPI
+2024-10-15,Groceries,Bread,7.55,4,30.2,2870,Net Banking
+2024-09-29,Toys,Board Game,136.71,9,1230.39,2136,Credit Card
+2025-01-03,Toys,Doll,473.43,4,1893.72,2831,Net Banking
+2024-05-02,Toys,Action Figure,225.96,9,2033.64,3211,Cash
+2024-09-16,Clothing,T-shirt,207.62,2,415.24,2728,Cash
+2024-04-22,Clothing,T-shirt,283.88,4,1135.52,1844,Credit Card
+2024-04-18,Health & Beauty,Face Cream,428.01,6,2568.06,3939,UPI
+2025-02-08,Groceries,Milk,376.95,5,1884.75,1371,Cash
+2025-02-01,Groceries,Bread,479.19,7,3354.33,1241,UPI
+2024-10-17,Books,Fiction Novel,302.62,4,1210.48,1150,Cash
+2024-12-22,Home & Kitchen,Microwave,329.79,2,659.58,2156,Cash
+2024-11-26,Books,Biography,325.02,4,1300.08,2313,Cash
+2024-05-27,Toys,Action Figure,93.5,8,748.0,3427,UPI
+2024-06-12,Home & Kitchen,Vacuum Cleaner,48.62,7,340.34,4677,Credit Card
+2024-05-28,Books,Cookbook,209.02,4,836.08,3759,Cash
+2025-02-01,Health & Beauty,Toothpaste,376.4,4,1505.6,3333,Net Banking
+2024-03-19,Home & Kitchen,Vacuum Cleaner,109.57,3,328.71,3526,UPI
+2025-01-23,Groceries,Vegetable Pack,230.24,7,1611.68,3621,Net Banking
+2024-04-25,Health & Beauty,Toothpaste,52.07,6,312.42,3393,UPI
+2025-03-02,Groceries,Rice,262.43,7,1837.01,2751,Cash
+2024-11-12,Groceries,Bread,317.55,9,2857.95,4469,Net Banking
+2025-01-19,Home & Kitchen,Blender,477.91,2,955.82,4609,Credit Card
+2024-08-16,Electronics,Headphones,257.47,10,2574.7,1475,Cash
+2024-05-31,Home & Kitchen,Microwave,84.39,4,337.56,1519,Net Banking
+2024-05-01,Electronics,Smartphone,433.65,1,433.65,1311,Net Banking
+2024-10-21,Home & Kitchen,Vacuum Cleaner,418.59,10,4185.9,1187,Net Banking
+2024-04-07,Health & Beauty,Toothpaste,421.2,3,1263.6,2036,Credit Card
+2024-05-27,Home & Kitchen,Cookware Set,132.1,5,660.5,3450,Cash
+2024-04-22,Home & Kitchen,Microwave,302.88,2,605.76,3343,Credit Card
+2024-04-09,Home & Kitchen,Vacuum Cleaner,102.83,7,719.81,2561,UPI
+2024-06-13,Groceries,Vegetable Pack,22.58,4,90.32,3511,Cash
+2024-03-02,Health & Beauty,Shampoo,204.64,1,204.64,1426,Cash
+2024-08-28,Toys,Doll,385.07,10,3850.7,4380,Cash
+2024-11-12,Electronics,Laptop,410.21,5,2051.05,4566,UPI
+2024-08-27,Clothing,Jacket,340.8,3,1022.4,4586,Credit Card
+2024-10-26,Groceries,Vegetable Pack,443.63,6,2661.78,4346,Cash
+2024-05-12,Clothing,Jacket,472.29,9,4250.61,1798,Credit Card
+2024-07-28,Home & Kitchen,Microwave,312.1,2,624.2,1257,Credit Card
+2025-02-09,Toys,Doll,16.41,7,114.87,1655,Net Banking
+2024-11-03,Home & Kitchen,Cookware Set,332.79,5,1663.95,1117,Cash
+2024-11-11,Clothing,Jeans,492.43,3,1477.29,2278,Cash
+2024-11-05,Toys,Action Figure,312.94,8,2503.52,4179,Credit Card
+2024-11-10,Groceries,Bread,210.93,5,1054.65,1386,Credit Card
+2025-02-26,Electronics,Smartwatch,208.9,3,626.7,2699,UPI
+2024-07-27,Home & Kitchen,Vacuum Cleaner,144.81,2,289.62,3664,Credit Card
+2024-12-05,Health & Beauty,Face Cream,207.39,6,1244.34,2460,Net Banking
+2024-11-16,Books,Biography,427.35,8,3418.8,1788,Credit Card
+2025-02-09,Toys,Action Figure,49.57,6,297.42,4032,Credit Card
+2024-12-25,Home & Kitchen,Cookware Set,91.61,8,732.88,4140,Net Banking
+2024-06-03,Home & Kitchen,Microwave,158.58,7,1110.06,1901,Cash
+2024-08-04,Groceries,Rice,95.42,1,95.42,1429,Credit Card
+2024-12-21,Groceries,Bread,489.82,5,2449.1,1294,Credit Card
+2025-01-01,Electronics,Smartwatch,228.9,8,1831.2,1542,Credit Card
+2024-04-28,Clothing,T-shirt,406.47,5,2032.35,1217,Credit Card
+2024-04-11,Groceries,Vegetable Pack,335.84,8,2686.72,2928,Net Banking
+2024-07-19,Books,Fiction Novel,328.21,5,1641.05,3209,Credit Card
+2024-05-01,Books,Fiction Novel,322.92,7,2260.44,2403,Cash
+2024-10-28,Health & Beauty,Toothpaste,37.93,9,341.37,4443,Net Banking
+2025-02-20,Home & Kitchen,Blender,337.71,2,675.42,1347,Net Banking
